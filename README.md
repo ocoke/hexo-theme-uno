@@ -47,4 +47,5 @@ npm install --save hexo-theme-uno
 
 Enable the theme in Blog Config (`_config.yml`):
 ```yaml
-theme: "u
+theme: "uno"
+```
