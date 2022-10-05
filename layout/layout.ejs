@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+<head>
+    <%- partial("_partial/head") %>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title" id="title"><%- config.title %></h1>
+        <blockquote class="subtitle" id="subtitle"><%- config.description %></blockquote>
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            <ul>
+                <% for (var i in theme.sidebar) { %>
+                <li><a href="<%- url_for(theme.sidebar[i]) %>" class="button">
+                    <%-  __(i) %>
+                </a></li>
+                <% } %>
+            </ul>
+        </div>
+        <%- body %>
+    </div>
+    <div class="footer">
+        <p><%- theme.copyright %></p>
+    </div>
+</body>
+</html>

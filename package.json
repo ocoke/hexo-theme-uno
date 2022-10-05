@@ -1,0 +1,26 @@
+{
+  "name": "hexo-theme-uno",
+  "version": "1.0.0",
+  "description": "A lite theme for hexo.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oCoke/hexo-theme-uno.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "hexo-theme",
+    "oCoke",
+    "hexo-theme-uno",
+    "theme-uno"
+  ],
+  "author": "CKY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oCoke/hexo-theme-uno/issues"
+  },
+  "homepage": "https://github.com/oCoke/hexo-theme-uno#readme"
+}

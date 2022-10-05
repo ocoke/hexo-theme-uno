@@ -1,0 +1,18 @@
+<%
+var joinStr = " - "
+var title = config.title
+if (page.title) {
+    title = [page.title, title].join(joinStr)
+}
+%>
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= title %></title>
+<meta name="description" content="<%= page.excerpt || config.description %>">
+<meta name="author" content="<%= page.author || config.author %>">
+<meta name="keywords" content="<%= config.keywords %>">
+
+<link rel="stylesheet" href="<%- url_for('/css/main.css') %>">

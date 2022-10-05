@@ -1,0 +1,14 @@
+<div class="posts-list">
+    <%- page.content %>
+</div>
+
+<script>
+    const pageinfo = {
+        author: "<%= page.author || config.author %>",
+        date: "<%= full_date(page.date, 'YYYY-MM-DD HH:mm') %>",
+        category: "<%= page.category %>",
+        title: "<%= page.title %>",
+    };
+    document.getElementById("subtitle").innerText = `Date: ${pageinfo.date || "null"}; Author: ${pageinfo.author || "null"}; Category: ${pageinfo.category || "null"};`;
+    document.getElementById("title").innerText = pageinfo.title;
+</script>
